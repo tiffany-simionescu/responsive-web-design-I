@@ -1,3 +1,390 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Start of my CSS code */
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 876px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  width: 876px;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  padding: 30px;
+}
+
+.nav-a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  padding: 15px;
+  padding-left: 80px;
+}
+
+.below-header {
+  display: flex;
+  padding-top: 50px;
+}
+
+.h1-button-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 450px;
+  font-size: 72px;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: flex-end;
+}
+
+.get-started {
+  display: flex;
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 40px;
+}
+
+.main-content {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 40px;
+  line-height: 1.2em;
+}
+
+.top-content {
+  display: flex;
+}
+
+.middle-img {
+  margin: 30px 0;
+}
+
+.bottom-content {
+  display: flex;
+}
+
+.bottom-content-child {
+  width: 33%;
+}
+
+hr {
+  display: flex;
+  margin: 20px 0;
+}
+
+address {
+  display: flex;
+  flex-flow: column nowrap;
+  line-height: 1.2em;
+}
+
+address a {
+  text-decoration: none;
+  color: black;
+}
+
+address a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
+}
+
+/* Mobile View */
+
+@media (max-width: 400px) {
+  .container {
+    width: 400px;
+  }
+  nav {
+    flex-direction: column;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    height: 270px;
+  }
+
+  .nav-a {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .nav-a:hover {
+    text-decoration: underline;
+  }
+  .logo {
+    margin: 0 auto;
+    padding-left: 110px;
+  }
+  .below-header {
+    display: flex;
+    padding-top: 120px;
+  }
+
+  .main-services {
+    height: 220vh;
+  }
+  .top-services {
+    padding: 0 20px;
+  }
+  .services-header-img {
+    width: 400px;
+  }
+  .child-item {
+    flex-basis: 380px;
+    margin: 10px;
+    height: 255px;
+  }
+  .main-services a {
+    padding: 3px 40px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  .bottom-hr {
+    position: relative;
+    margin-bottom: 0;
+  }
+  .bottom-content-services {
+    flex-direction: column;
+    line-height: 1.3em;
+    padding: 20px;
+  }
+  .services-info-img {
+    width: 355px;
+    height: 280px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  /* index.html mobile view */
+  .below-header {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  h1 {
+    width: 400px;
+    margin-top: 40px;
+  }
+  .button {
+    padding-bottom: 20px;
+  }
+  .circle-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .top-content-child h4,
+  .bottom-content-child h4 {
+    margin-top: 20px;
+  }
+
+  .main-content {
+    margin: 0px auto;
+    padding: 10px;
+    width: 400px;
+  }
+
+  .top-content {
+    flex-direction: column;
+    width: 400px;
+    padding-right: 20px;
+  }
+
+  .middle-img {
+    margin: 20px 0;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .bottom-content-child {
+    width: 400px;
+    padding-right: 20px;
+  }
+
+  address {
+    padding-left: 10px;
+  }
+
+  footer {
+    align-items: center;
+    height: 50px;
+  }
+}
