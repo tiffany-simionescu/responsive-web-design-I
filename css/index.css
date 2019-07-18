@@ -224,7 +224,16 @@ h1 {
 
 .top-content {
   display: flex;
+  align-items: space-between;
 }
+
+/* .features {
+  padding: 0 10px 0 0;
+}
+
+.about {
+  padding: 0 0 0 10px;
+} */
 
 .middle-img {
   margin: 30px 0;
@@ -269,29 +278,36 @@ footer {
   border: 1px solid white;
 }
 
-/* Mobile View */
+#smaller-screen-logo {
+  display: none;
+}
 
-@media (max-width: 500px) {
+/* Tablet View */
+@media (max-width: 800px) {
   .container {
     display: flex;
     width: 98%;
+    align-items: center;
+  }
+  nav {
+    width: 98%;
   }
 
-  nav,
   .below-header {
-    flex-direction: column;
     width: 98%;
     align-items: center;
+    justify-content: center;
   }
 
   .nav-a {
-    padding: 1px;
-    font-size: 18px;
+    padding: 30px;
+    font-size: 16px;
     font-weight: bold;
     color: silver;
   }
-  .logo {
-    /* Find a way to put logo on top of nav */
+
+  #desktop-logo {
+    display: none;
   }
 
   .circle-img {
@@ -308,7 +324,94 @@ footer {
   }
 
   .main-content {
-    /* margin: 0px auto; */
+    padding: 10px;
+    width: 98%;
+  }
+
+  .features {
+    padding-right: 30px;
+  }
+
+  .top-content,
+  .bottom-content {
+    justify-content: space-between;
+    width: 98%;
+  }
+
+  .middle-img {
+    width: 98%;
+  }
+
+  .bottom-content-child {
+    width: 30%;
+  }
+
+  .middle-img {
+    margin-bottom: 0;
+  }
+
+  address {
+    width: 98%;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+
+  footer {
+    align-items: center;
+    height: 50px;
+  }
+
+  hr {
+    border: 1px solid black;
+    width: 98%;
+  }
+
+  #smaller-screen-logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Mobile View */
+
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    width: 98%;
+  }
+  .logo {
+    padding-top: 20px;
+    width: 98%;
+  }
+
+  nav,
+  .below-header {
+    flex-direction: column;
+    width: 98%;
+    align-items: center;
+  }
+
+  .nav-a {
+    padding: 1px;
+    font-size: 18px;
+    font-weight: bold;
+    color: silver;
+  }
+
+  .circle-img {
+    display: none;
+  }
+
+  .button {
+    padding-bottom: 20px;
+  }
+
+  .top-content-child h4,
+  .bottom-content-child h4 {
+    margin-top: 40px;
+  }
+
+  .main-content {
     padding: 10px;
     width: 98%;
   }
@@ -346,3 +449,6 @@ footer {
     width: 100%;
   }
 }
+
+/* Things I need to fix */
+/* Mobile View - Centering of Logo (try adding with no div ids), longer hr lines in nav */
