@@ -160,7 +160,7 @@ h5 {
 
 nav {
   display: flex;
-  width: 876px;
+  /* width: 876px; */
 }
 
 .nav-a {
@@ -379,8 +379,9 @@ footer {
     display: flex;
     width: 98%;
   }
+
   .logo {
-    padding-top: 20px;
+    padding: 20px 0 0 0;
     width: 98%;
   }
 
@@ -404,6 +405,7 @@ footer {
 
   .button {
     padding-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .top-content-child h4,
@@ -420,6 +422,15 @@ footer {
   .bottom-content {
     flex-direction: column;
     width: 98%;
+  }
+
+  .features,
+  .about {
+    padding: 20px 0;
+  }
+
+  .bottom-content-child {
+    padding-bottom: 20px;
   }
 
   .middle-img,
@@ -440,15 +451,8 @@ footer {
     height: 50px;
   }
 
-  hr {
-    border: 1px solid black;
-  }
-
-  .mobile-hr {
+  hr.mobile-hr {
     border: 1px solid lightgray;
-    width: 100%;
+    width: 265%;
   }
 }
-
-/* Things I need to fix */
-/* Mobile View - Centering of Logo (try adding with no div ids), longer hr lines in nav */
