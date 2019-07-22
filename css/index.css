@@ -154,13 +154,13 @@ h5 {
 .container {
   display: flex;
   flex-flow: column nowrap;
-  width: 876px;
+  max-width: 876px;
   margin: 0 auto;
+  padding: 0 1.5%;
 }
 
 nav {
   display: flex;
-  /* width: 876px; */
 }
 
 .nav-a {
@@ -176,7 +176,8 @@ nav {
 
 .logo {
   padding: 15px;
-  padding-left: 80px;
+  padding-left: 50px;
+  padding-right: 1.5%;
 }
 
 .below-header {
